@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doguito Petshop | Product Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/componentes/header.css">
+    <link rel="stylesheet" href="./assets/css/componentes/card.css">
+    <link rel="stylesheet" href="./assets/css/registry_client.css">
+    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="./assets/css/componentes/button.css">
+    <link rel="stylesheet" href="./assets/css/cadastro_produto.css">
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <img src="./assets/img/doguitoadm.svg" alt="Logo Doguito" class="cabecalho__logo">
+        <nav>
+            <ul class="header__list-nav">
+                <li class="header__link"><a href="#">Dashboard</a></li>
+                <li class="header__link"><a href="#">Products</a></li>
+                <li class="header__link"><a href="lista_cliente.html">Clients</a></li>
+                <li class="header__link"><a href="#">Pets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--center flex--column">
+        <section class="cartao cadastro">
+            <h1 class="card__title">Product registration</h1>
+            <form action="./product_registration_ok.html" class="flex flex--column">
+                <div class="input-container">
+                    <input name="name" id="name" class="input" type="text" placeholder="Name">
+                    <label class="input-label" for="name">Name</label>
+                    <span class="input-message-error">This field is not valid</span>
+                </div>
+                <div class="input-container registry__price-container">
+                    <input name="price" id="price" class="input" type="text" placeholder="Price">
+                    <label class="input-label" for="price">Price</label>
+                    <span class="input-message-error">This field is not valid</span>
+                </div>
+                <div class="input-container registry__description-container">
+                    <input class="input" name="description" id="description" placeholder="Description">
+                    <label class="input-label" for="description">Description</label>
+                    <span class="input-message-error">This field is not valid</span>
+                </div>
+                <button class="button">Register product</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

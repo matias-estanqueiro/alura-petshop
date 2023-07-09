@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doguito Petshop | Create account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/registro.css">
+    <link rel="stylesheet" href="./assets/css/componentes/card.css">
+    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="./assets/css/componentes/button.css">
+    <script type="module" src="./assets/js/app.js"></script>
+</head>
+<body>
+    <main class="container flex flex--column flex--center">
+        <div class="cadastro-cabecalho">
+            <img src="./assets/img/doguito.svg" alt="Logo Doguito" class="registry-header__logo">
+            <h1 class="registry-header__title">Doguito PetShop</h1>
+        </div>
+        <section class="cartao">
+            <h2 class="card__title">Complete your registration</h2>
+            <form action="./client_registration_ok.html" class="formulario flex flex--column">
+                <fieldset>
+                    <legend class="form__label">Basic Information</legend>
+                    <div class="input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Name" required data-type="name">
+                        <label class="input-label" for="name">Name</label>
+                        <span class="input-message-error">This field is not valid</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required data-type="email">
+                        <label class="input-label" for="email">Email</label>
+                        <span class="input-message-error">This field is not valid</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="password" id="password" class="input" type="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+]).{6,12}$" required data-type="password">
+                        <!-- <input name="password" id="password" class="input" type="password" placeholder="Password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+]).{6,12}$" title="At least 6 characters, maximum 12. Must contain one lowercase letter, one uppercase letter, one number, and no one special character."> -->
+                        <label class="input-label" for="password">Password</label>
+                        <span class="input-message-error">This field is not valid</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="form__label">Personal Information</legend>
+                    <div class="input-container">
+                        <input name="birth" id="birth" class="input" type="date" placeholder="Birthdate" required data-type="birthday">
+                        <label class="input-label" for="birth">Birthdate</label>
+                        <span class="input-message-error">This field is not valid</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Phone Number" pattern="^[0-9]*$" minlength="10" maxlength="10" required data-type="phonenumber">
+                        <label class="input-label" for="phoneNumber">Phone Number</label>
+                        <span class="input-message-error">This field is not valid</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="form__label">Address Information</legend>
+                    <div class="input-container">
+                        <input name="cep" id="cep" class="input" type="text" placeholder="Address" pattern="^[A-Za-z0-9]*$" minlength="10" maxlength="40" required data-type="address">
+                        <label class="input-label" for="cep">Address</label>
+                        <span class="input-message-error">This field is not valid</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="city" id="city" class="input" type="text" placeholder="City" pattern="^[A-Za-z0-9]*$" minlength="3" maxlength="20" required data-type="city">
+                        <label class="input-label" for="city">City</label>
+                        <span class="input-message-error">This field is not valid</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="state" id="state" class="input" type="text" placeholder="State" pattern="^[A-Za-z0-9]*$" minlength="3" maxlength="20" required data-type="state">
+                        <label class="input-label" for="state">State</label>
+                        <span class="input-message-error">This field is not valid</span>
+                    </div>
+                </fieldset>
+                <button class="button">Register</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
