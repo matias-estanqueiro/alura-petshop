@@ -90,9 +90,9 @@ function showErrorMessage(inputType, input) {
     let message = '';
     errorType.forEach(error => {
         if(input.validity[error]){
-            console.log(inputType, error);
-            console.log(input.validity[error]);
-            console.log(errorMessages[inputType][error]);
+            // console.log(inputType, error);
+            // console.log(input.validity[error]);
+            // console.log(errorMessages[inputType][error]);
             message = errorMessages[inputType][error];
         };
     });

@@ -7,29 +7,29 @@
     <title>Doguito Petshop | Product Registration</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/base/base.css">
-    <link rel="stylesheet" href="./assets/css/componentes/header.css">
-    <link rel="stylesheet" href="./assets/css/componentes/card.css">
-    <link rel="stylesheet" href="./assets/css/registry_client.css">
-    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
-    <link rel="stylesheet" href="./assets/css/componentes/button.css">
-    <link rel="stylesheet" href="./assets/css/cadastro_produto.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
 </head>
 
 <body>
-    <header class="cabecalho container">
-        <img src="./assets/img/doguitoadm.svg" alt="Logo Doguito" class="cabecalho__logo">
+    <header class="header container">
+        <img src="./assets/img/doguitoadm.svg" alt="Logo Doguito" class="header__logo">
         <nav>
             <ul class="header__list-nav">
                 <li class="header__link"><a href="#">Dashboard</a></li>
-                <li class="header__link"><a href="#">Products</a></li>
-                <li class="header__link"><a href="lista_cliente.html">Clients</a></li>
+                <li class="header__link"><a href="./product_registration.html">Products</a></li>
+                <li class="header__link"><a href="./client_registration.html">Clients</a></li>
                 <li class="header__link"><a href="#">Pets</a></li>
             </ul>
         </nav>
     </header>
     <main class="container flex flex--center flex--column">
-        <section class="cartao cadastro">
+        <div class="registry-header">
+            <img src="./assets/img/doguito.svg" alt="Logo Doguito" class="registry-header__logo">
+            <h1 class="registry-header__title">Doguito PetShop</h1>
+        </div>
+        <section class="card registry">
             <h1 class="card__title">Product registration</h1>
             <form action="./product_registration_ok.html" class="flex flex--column">
                 <div class="input-container">

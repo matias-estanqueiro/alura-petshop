@@ -7,23 +7,33 @@
     <title>Doguito Petshop | Registration completed</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/base/base.css">
-    <link rel="stylesheet" href="./assets/css/cadastro_concluido.css">
-    <link rel="stylesheet" href="./assets/css/componentes/card.css">
-    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
-    <link rel="stylesheet" href="./assets/css/componentes/button.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
 </head>
 
 <body>
+    <header class="header container">
+        <img src="./assets/img/doguitoadm.svg" alt="Logotipo Doguito" class="header__logo">
+        <nav>
+            <ul class="header__list-nav">
+                <li class="header__link"><a href="#">Dashboard</a></li>
+                <li class="header__link"><a href="./product_registration.html">Productos</a></li>
+                <li class="header__link"><a href="./client_registration.html">Clientes</a></li>
+                <li class="header__link"><a href="#">Pets</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="container flex flex--column flex--center">
-        <div class="cadastro-cabecalho">
+        <div class="registry-header">
             <img src="./assets/img/doguito.svg" alt="Logo Doguito" class="registry-header__logo">
             <h1 class="registry-header__title">Doguito PetShop</h1>
         </div>
-        <section class="registry-card cartao">
+        <section class="registry-card card">
             <span class="registry-card__icon-complete"></span>
             <h1 class="registry-card__title card__title">¡Registration completed!</h1>
-            <a href="#" class="button">Log In</a>
+            <a href="./client_registration.html" class="button">Register another client</a>
+            <a href="#" class="button">See all clients</a>
         </section>
     </main>
 </body>

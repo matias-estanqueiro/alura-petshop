@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doguito Petshop | Create account</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./assets/css/base/base.css">
-    <link rel="stylesheet" href="./assets/css/registro.css">
-    <link rel="stylesheet" href="./assets/css/componentes/card.css">
-    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
-    <link rel="stylesheet" href="./assets/css/componentes/button.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
     <script type="module" src="./assets/js/app.js"></script>
 </head>
 <body>
+    <header class="header container">
+        <img src="./assets/img/doguitoadm.svg" alt="Logo Doguito" class="header__logo">
+        <nav>
+            <ul class="header__list-nav">
+                <li class="header__link"><a href="#">Dashboard</a></li>
+                <li class="header__link"><a href="./product_registration.html">Products</a></li>
+                <li class="header__link"><a href="./client_registration.html">Clients</a></li>
+                <li class="header__link"><a href="#">Pets</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="container flex flex--column flex--center">
-        <div class="cadastro-cabecalho">
+        <div class="registry-header">
             <img src="./assets/img/doguito.svg" alt="Logo Doguito" class="registry-header__logo">
             <h1 class="registry-header__title">Doguito PetShop</h1>
         </div>
-        <section class="cartao">
-            <h2 class="card__title">Complete your registration</h2>
-            <form action="./client_registration_ok.html" class="formulario flex flex--column">
+        <section class="card">
+            <h2 class="card__title">Client registration</h2>
+            <form action="./client_registration_ok.html" class="form flex flex--column">
                 <fieldset>
                     <legend class="form__label">Basic Information</legend>
                     <div class="input-container">
@@ -57,17 +67,17 @@
                 <fieldset>
                     <legend class="form__label">Address Information</legend>
                     <div class="input-container">
-                        <input name="cep" id="cep" class="input" type="text" placeholder="Address" pattern="^[A-Za-z0-9]*$" minlength="10" maxlength="40" required data-type="address">
+                        <input name="cep" id="cep" class="input" type="text" placeholder="Address" pattern="^[A-Za-z0-9\s]*$" minlength="10" maxlength="40" required data-type="address">
                         <label class="input-label" for="cep">Address</label>
                         <span class="input-message-error">This field is not valid</span>
                     </div>
                     <div class="input-container">
-                        <input name="city" id="city" class="input" type="text" placeholder="City" pattern="^[A-Za-z0-9]*$" minlength="3" maxlength="20" required data-type="city">
+                        <input name="city" id="city" class="input" type="text" placeholder="City" pattern="^[A-Za-z0-9\s]*$" minlength="3" maxlength="20" required data-type="city">
                         <label class="input-label" for="city">City</label>
                         <span class="input-message-error">This field is not valid</span>
                     </div>
                     <div class="input-container">
-                        <input name="state" id="state" class="input" type="text" placeholder="State" pattern="^[A-Za-z0-9]*$" minlength="3" maxlength="20" required data-type="state">
+                        <input name="state" id="state" class="input" type="text" placeholder="State" pattern="^[A-Za-z0-9\s]*$" minlength="3" maxlength="20" required data-type="state">
                         <label class="input-label" for="state">State</label>
                         <span class="input-message-error">This field is not valid</span>
                     </div>
